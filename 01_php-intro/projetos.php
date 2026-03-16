@@ -2,30 +2,37 @@
  <?php
  $nome          ="Jeferson Adriano Cararo";
  $pagina_atual  ="projetos";
+ $caminho_raiz  ="../"
  ?>
  <!DOCTYPE html>
  <html lang="pt-br">
  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projetos - <?php echo $nome; ?></title>
+ 
+    <?php include '../includes/cabecalho.php';?> 
+<main>
+    <h2>Esses são os meus projetos q eu fiz ao longo dos anos</h2><br>
+        <h3>Projeto feito em 2024 sobre mim</h3><br>
+         <a href="<?php echo $caminho_raiz; ?>01_php-intro/about.html"
+    <?php echo menu_class("projetos", $pagina_atual); ?>>
+    ABOUT ME 
+<br></main><p>  
+    <main>  
+    <h3>Projeto feito em 2024 sobre o carro q a gente quer</h3><br>    
+    <a href="<?php echo $caminho_raiz; ?>01_php-intro/carro.html"
+    <?php echo menu_class("projetos", $pagina_atual); ?>></p>
+    CARRO
+</main>
+<main>
+ <h3>Projeto feito em 2026 na primeira aula</h3><br>    
+    <a href="<?php echo $caminho_raiz; ?>00_apresentacao/index.html"
+    <?php echo menu_class("projetos", $pagina_atual); ?>></p>
+    00_apresentacao
+</main>
+
  </head>
  <body style="font-family: Arial, sans-serif; margin: 0; background: #f3f4f6;">
 
-    <?php include 'includes/cabecalho.php'; ?>
-
-    <div style="max-width: 800px; margin: 40px auto; padding: 0 20px;">
-        <h1 style="color: #37033f;"> MEUS PROJETOS</h1>
-   <br>
-    Primeiro site bonitinho que eu aprendi a fazer<br> 
-        <a href="about.html"
-            style="color: #681088; font-weight: bold;"> PROJETO SOBRE MIM FEITO EM 2024</a>
-<br>
-        <a href="index.php"
-         style="color: #681088; font-weight: bold;"> VOLTAR AO INICIO</a>
-    </div>
-
-    <?php include 'includes/rodape.php'; ?>
+    <?php include '../includes/rodape.php'; ?>
 
  </body>
  </html>

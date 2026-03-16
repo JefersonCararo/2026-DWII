@@ -12,27 +12,23 @@ Repositório da disciplina **Desenvolvimento Web II** — 2026
 - **Ano:** 2026
 
 ---
+Mini-site de portfólio pessoal desenvolvido em PHP puro.
+Gerado dinamicamente com variáveis, includes e condicionais.
 
-## 📁 Estrutura do Repositório
+EXECUTAR O SITE:
 
-| Pasta | Conteúdo |
-|-------|----------|
-| `01_php-intro/` | Página com PHP e CSS|
+cd ~/workspaces/2026-DWII
+php -S localhost:8001 -t 01_php-intro/
 
----
+ESTRUTURA DE ARQUIVOS:
 
-## 🌐 Páginas Publicadas
-
-- 📄 [Página de Apresentação](01_php-intro/index.html)
-
----
-
-## 🔗 Como visualizar
-
-1. Clone o repositório: `git clone https://github.com/SEU-USUARIO/2026-DWII`
-2. Acesse a pasta `01_php-intro/`
-3. Abra o arquivo `index.html` no navegador
-
+index.php
+sobre.php
+projetos.php
+includes/
+cabecalho.php
+rodape.php
+nav.php
 ---
 
 *Disciplina ministrada pelo Prof. Dr. João Henrique Berssanette — joao.berssanette@ifpr.edu.br*
