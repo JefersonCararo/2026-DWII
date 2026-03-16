@@ -1,0 +1,13 @@
+[33me796aa1[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: reset: moving to origin
+[33mf4a09d1[m HEAD@{1}: pull --rebase origin main (pick): refactor: hub na raiz, centraliza includes e css globais
+[33me796aa1[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{2}: pull --rebase origin main (start): checkout e796aa1e3635b629fcbebfe7ff66ea79f96f2aa2
+[33ma2becb2[m[33m ([m[1;32mmain[m[33m)[m HEAD@{3}: commit: reafactor
+[33m500c789[m HEAD@{4}: commit: refactor: hub na raiz, centraliza includes e css globais
+[33mefc374e[m HEAD@{5}: commit: feat: aula04 - formulario de contato com GET, POST e validacao
+[33m099454f[m HEAD@{6}: commit: refactor: hub na raiz, centraliza includes e css globais
+[33m656cf66[m HEAD@{7}: commit: feat:aula04 - formulario de contato com GET, POST e validacao
+[33meab34f2[m HEAD@{8}: commit: desvinculando 01
+[33md951b4c[m HEAD@{9}: pull origin main (finish): returning to refs/heads/main
+[33md951b4c[m HEAD@{10}: pull origin main (pick): aula03
+[33mf250638[m HEAD@{11}: pull origin main (start): checkout f25063816565bc75657bbd42931a85335a0eb8e2
+[33mbefede6[m HEAD@{12}: commit (initial): aula03
