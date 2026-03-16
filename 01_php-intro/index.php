@@ -21,11 +21,18 @@ $ano = "2026";
    <?php include '../includes/cabecalho.php';?>
 <main>
   <body>
+<div class="hero">
+  <h1><?php echo $nome; ?></h1>
+  
+    <strong><?php echo $profissao; ?> | <?php echo $curso; ?></p>
+</div>
 
-  <h1> Oi, Meu nome é <?php echo $nome; ?></h1>
-  <p><h2>CURSO: <?php echo $curso; ?></h2></p>
-  <p><h3>ANO: <?php echo $ano; ?></h3></p>
-<br>
+<div class="container">
+  <h2>Bem vindo ao meu portfólio</h2>
+  <p>Está pagina foi gerada pelo PHP em:</p>
+    <strong><?php echo date("d/m/Y \à\s H:i:s"); ?></strong></p>
+</div>  
+
 </main>
 </body>
  
