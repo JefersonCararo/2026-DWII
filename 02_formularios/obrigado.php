@@ -3,10 +3,11 @@
 $nome   ="JEFERSON ADRIANO CARARO";
 $pagina_atual ="contato";
 $caminho_raiz ="../";
-$titulo_pagina  ="Contato";
+$titulo_pagina  ="OBRIGADO";
 
 $nome_visitante = htmlspecialchars($_POST['nome'] ?? 'visitante');
-
+$assunto = $_GET['assunto'] ?? 'Não Informado';
+$chars = $_GET['chars'] ?? 0;
 ?>
 
 <?php include '../includes/cabecalho.php'; ?>
