@@ -1,4 +1,4 @@
-header{
+/*header{
     border-style: solid;
     background-color: rgb(224, 197, 241);
     border-width: 1px;
@@ -39,5 +39,64 @@ box{
     display:inline-block;
     vertical-align:top;
 
+}*/
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#490f58
 }
 
+h2{
+    text-align: center;
+    color:#4d1c5c;
+    font-family: fantasy;
+}
+body{
+    background-color:#ffffff;
+}
+h3{
+    text-align: center;
+    color:rgb(112, 11, 111);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h4{
+    text-align: center;
+    color: #831b91;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+    text-align: center;
+    color: #481c56;
+    font-family: fantasy;
+}
+main{
+background-color: rgb(255, 255, 255);
+border-radius: 10px;
+box-shadow: 10px 10px 25px rgba(51, 2, 165, 0.753);
+width: 900px;
+padding: 10px;
+margin: auto;
+text-align: justify;
+
+}
+button{
+    text-align: center;
+
+}
+footer{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 10px 10px 25px rgba(238, 38, 188, 0.753);
+    width: 900px;
+    padding: 10px;
+    margin: auto;
+    text-align: justify;    
+}
+section{
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#000000
+}
+header{
+    display: grid;
+    text-align: center;
+}
