@@ -22,7 +22,7 @@ $tecnologias = $stmt->fetchAll();
 <body>
     <div class="container">
     <h1 class="titulo-secao"> CATALOGO DE TECNOLOGIAS</h1>
-    <p style="color: #6b7280; margin-bottom: 20px;">
+    <p style="color: #92147b; margin-bottom: 20px;">
         <?php echo count($tecnologias); ?> tecnologia(s) cadastrada(s)
     </p>
 
@@ -31,13 +31,13 @@ $tecnologias = $stmt->fetchAll();
             <div style="display: flex; justify-content: space-between; align-items: center;">
 
             <h3><?php echo htmlspecialchars($tec['nome']); ?></h3>
-            <span style="background: #e8edf5; color: #3b579d; padding: 3px 10px; border-radius: 20px; font-size: 13px;">
+            <span style="background: #e8edf5; color: #832288; padding: 3px 10px; border-radius: 20px; font-size: 13px;">
                 <?php echo htmlspecialchars($tec['categoria']);?>
         </span>
 </div>
 <p><?php echo htmlspecialchars($tec['descricao']); ?></p>
 <a href="/03_pdo/detalhe.php?id=<?php echo $tec['id']; ?>"
-    style="color: #3b579d; font-size: 14px; font-weight: bold; display: inline-block; margin-top: 10px;">
+    style="color: #a4219e; font-size: 14px; font-weight: bold; display: inline-block; margin-top: 10px;">
     VER DETALHES 
 </a>
 </div>
