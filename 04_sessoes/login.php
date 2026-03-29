@@ -28,6 +28,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         session_regenerate_id(true);
         $_SESSION['usuario'] = $login;
         $_SESSION['logado_em'] = date('d/m/Y \à\s H:i');
+        $_SESSION['senha'] = $senha;
         header('Location: painel.php');
         exit;
     }else{
@@ -79,7 +80,7 @@ $pagina_atual = '';
         </form>
 
         <p style="text-align: center; margin-top:20px; font-size: 13px; color: #6b7280;">
-            <a href="../index.php" style="color: #3b579d;">
+            <a href="../index.php" style="color: #9d3b3b;">
                 VOLTAR AO INICIO
             </a>
         </p>

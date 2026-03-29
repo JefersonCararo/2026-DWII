@@ -20,6 +20,11 @@ requer_login();
 $titulo_pagina = 'Painel - Área Restrita';
 $caminho_raiz = '../';
 $pagina_atual = '';
+
+if (!isset($_SESSION['visitas'])) {
+    $_SESSION['visitas'] = 0;
+}
+$_SESSION['visitas']++;
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +44,9 @@ $pagina_atual = '';
     <p><strong>Login realizado em:</strong>
     <?php echo htmlspecialchars($_SESSION['logado_em'] ?? '-'); ?>
     </p>
-      
+    <p><strong>Visitas:</strong>
+    <?php echo htmlspecialchars($_SESSION['visitas']);?>
+    </p>
 </div>
 
 <div class="card">
@@ -56,6 +63,14 @@ $pagina_atual = '';
         border-radius: 6px; text-decoration: none;
         font-weight:bold;">
         SAIR    
+    </a>
+</p>
+<p style="margin-top: 24px; text-align: center;">
+    <a href="perfil.php"
+        style="background: #cf1c21; color: white; padding:10px 24px;
+        border-radius: 6px; text-decoration: none;
+        font-weight:bold;">
+        VER PERFIL    
     </a>
 </p>
 </div>
