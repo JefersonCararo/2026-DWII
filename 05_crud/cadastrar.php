@@ -66,7 +66,7 @@ $caminho_raiz = '../';
 $pagina_atual = '';
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
 <?php require_once __DIR__ . '/../includes/cabecalho.php'; ?>
 </head>
@@ -124,7 +124,7 @@ $pagina_atual = '';
         </div>
 
         <p style="margin-top: 20px; text-align: center;">
-            <a href="index.php" style="color: #3b579d;"> VOLTAR À LISTAGEM</a>
+            <a href="index.php" style="color: #9d3b90;"> VOLTAR À LISTAGEM</a>
         </p>
 </div>
 
