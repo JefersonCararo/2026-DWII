@@ -49,30 +49,20 @@ $_SESSION['visitas']++;
     </p>
 </div>
 
-<div class="card">
-    <h3> PAINEL DE CONTROLE </h3>
-    <p>ESTE CONTEÚDO SÓ É VISÍVEL PARA USUÁRIOS AUTENTICADOS.
-    </p>
-    <p>NAS PRÓXIMAS AULAS ESTE PAINEL TERÁ FUNCIONALIDADES REAIS (CRUD).
-    </p>
+    <div class="card">
+        <h3>PAINEL DE CONTROLE</h3>
+        <p>Este conteúdo só é visisel para usuários autenticados.</p>
+
+        <a href="../05_crud/index.php" class="btn-primario">
+            GERENCIAR PROJETOS</a> 
 </div>
 
 <p style="margin-top: 24px; text-align: center;">
     <a href="logout.php"
-        style="background: #cf1c21; color: white; padding:10px 24px;
-        border-radius: 6px; text-decoration: none;
-        font-weight:bold;">
-        SAIR    
-    </a>
+       style="background: #cf1c21; color: white; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-weight: bold;">
+       SAIR</a>
 </p>
-<p style="margin-top: 24px; text-align: center;">
-    <a href="perfil.php"
-        style="background: #cf1c21; color: white; padding:10px 24px;
-        border-radius: 6px; text-decoration: none;
-        font-weight:bold;">
-        VER PERFIL    
-    </a>
-</p>
+
 </div>
 
 <?php require_once __DIR__ . '/../includes/rodape.php';?>
