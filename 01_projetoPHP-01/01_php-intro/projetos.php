@@ -14,19 +14,19 @@
         <h3>Projeto feito em 2024 sobre mim</h3><br>
          <a href="<?php echo $caminho_raiz; ?>01_php-intro/about.html"
     <?php echo menu_class("projetos", $pagina_atual); ?>>
-    ABOUT ME 
+    ABOUT ME</a>
 <br></main><p>  
     <main>  
     <h3>Projeto feito em 2024 sobre o carro q a gente quer</h3><br>    
     <a href="<?php echo $caminho_raiz; ?>01_php-intro/carro.html"
     <?php echo menu_class("projetos", $pagina_atual); ?>></p>
-    CARRO
+    CARRO</a>
 </main>
 <main>
  <h3>Projeto feito em 2026 na primeira aula</h3><br>    
     <a href="<?php echo $caminho_raiz; ?>00_apresentacao/index.html"
     <?php echo menu_class("projetos", $pagina_atual); ?>></p>
-    00_apresentacao
+    00_apresentacao</a>
 </main>
 
  </head>

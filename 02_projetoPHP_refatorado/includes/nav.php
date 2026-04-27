@@ -7,16 +7,16 @@ AUTOR: JEFERSON ADRIANO CARARO
 CONCEITOS: Menu dinâmico, operador ternário, $caminho_raiz
 */
 
-if(!isset($pagina_atual)) $pagina_atual ="";
-if(!isset($caminho_raiz)) $caminho_raiz ="../";
+// fallbacks defensivos
+if(!isset($pagina_atual)) $pagina_atual ='';
+if(!isset($caminho_raiz)) $caminho_raiz ='./';
 
-function menu_class($item, $atual){
+function menu_class(string $item, string $atual): string{
     return ($item === $atual) ? 'class="ativo"' : '';
 }
 
+$logado = isset($_SESSION['usuario']);
 ?>
-
-
 
 <nav>
     <a href="<?php echo $caminho_raiz; ?>01_php-intro/index.php"
@@ -35,4 +35,30 @@ function menu_class($item, $atual){
     <?php echo menu_class("contato", $pagina_atual); ?>>
     CONTATO
 </a>
+ <a href="<?php echo $caminho_raiz; ?>03_pdo/index.php"
+    <?php echo menu_class("catalogo", $pagina_atual); ?>>
+    CATALOGO
+ </a>
+
+<?php if($logado): ?>
+
+<a href="<?php echo $caminho_raiz; ?>04_sessoes/painel.php"
+    <?php echo menu_class("painel", $pagina_atual); ?>>
+    PAINEL
+</a>
+
+<a href="<?php echo $caminho_raiz; ?>04_sessoes/logout.php"
+    <?php echo menu_class("logout", $pagina_atual); ?>>
+    LOGOUT
+</a>
+
+<?php else: ?>
+
+<a href="<?php echo $caminho_raiz; ?>04_sessoes/publico.php"
+    <?php echo menu_class("login", $pagina_atual); ?>>
+    LOGIN
+</a> 
+ 
+<?php endif; ?>
+
 </nav>

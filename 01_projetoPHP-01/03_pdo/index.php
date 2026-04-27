@@ -1,3 +1,4 @@
+<?php
 /*
 DISCIPLINA: Desenvolvimento Web II (2026-DWII)
 AULA: 05 - PHP + MariaDB: persistencia de dados via PDO
@@ -5,7 +6,7 @@ AUTOR: JEFERSON ADRIANO CARARO
 DATA: 22/03/2026
 */
 
-<?php
+
 $titulo_pagina = "Catálogo de Tecnologias";
 $pagina_atual = "catalogo";
 

@@ -9,7 +9,8 @@ CONCEITOS: Ponto de Entrada, array associativo, foreach, date(), htmlspecialchar
 
 $nome = "JEFERSON ADRIANO CARARO";
 $subtitulo = "Repositório 2026 - Desenvolvimento Web II";
-
+$caminho_raiz = "../";
+?><?php
 $aulas =[
     [
         "numero"    =>"0",
@@ -36,17 +37,16 @@ $aulas =[
         "link" =>"02_formularios/contato.php",
         "icone" =>"",
         "cor" =>"#eca7ff",
-        "conceitos" =>"$_POST, validação, htmlspecialchars(), header() + exit",
+        "conceitos" =>'$_POST, validação, htmlspecialchars(), header() + exit',
     ],
 ];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($subtitulo); ?></title>
     <link rel="stylesheet" type="text/css" href="<?php echo $caminho_raiz; ?>includes/style.css">
+
 </head>
 <body>
     <header>
@@ -57,11 +57,11 @@ $aulas =[
     <div class="container">
         <div class="box-info" style="margin-top: 0;">
             <h3>COMO EXECUTAR O REPOSITÓRIO</h3>
-            <p style="font-size: 14px; color: #74151;">
+            <p style="font-size: 14px; color: #74151f;">
                 Suba o servidor PHP na <strong>raiz</strong> para acessar todas as aulas;
             </p>
             <div style="background: #010000; color: #a8e6a3; padding: 10px 16px;
-            border-radius: 6px; margin-top: 10px; font-family: 'Courier New, monospace;
+            border-radius: 6px; margin-top: 10px; font-family: 'Courier New', monospace;
                 font-size: 13px; color: #6b7280; line-height: 1.8;">
             cd~/workspaces/2026-DWII<br>php -S localhost:8000
         </div>

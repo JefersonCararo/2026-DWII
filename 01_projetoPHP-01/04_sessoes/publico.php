@@ -33,7 +33,7 @@ $pagina_atual = '';
         <p>Olá, <strong><?php echo htmlspecialchars($_SESSION['usuario']);?></strong>!
         VOCÊ JÁ ESTÁ AUTENTICADO.</p>
         <a href="painel.php"
-           style="background: #3ba34a; color: white; padding: 10px 24px;
+           style="background: #8f1283; color: white; padding: 10px 24px;
            border-radius: 6px; text-decoration: none;
            font-weight: bold;">
            IR AO PAINEL
@@ -41,7 +41,7 @@ $pagina_atual = '';
 
     <?php else: ?>
         <a href="login.php"
-           style="background: #3b579d; color: white; padding: 10px 24px;
+           style="background: #9b2a81; color: white; padding: 10px 24px;
            border-radius: 6px; text-decoration: none;
            font-weight: bold;">
         ACESSAR ÁREA RESTRITA   
