@@ -15,7 +15,7 @@ $descricao = 'Estudante de Técnico em Informática no IFPR, '
            . 'apaixonado por desenvolvimento web e tecnologia. '
            . 'Este portfólio documenta minha jornada de aprendizado '
            . 'ao longo da disciplina de Desenvolvimento Web II.';
-$email     = 'jefersonadrianocararo@gamil.com';
+$email     = 'jefersonadrianocararo@gmail.com';
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +36,7 @@ include __DIR__ . '/includes/cabecalho.php';
   <!-- Foto de perfil -->
   <div class="foto-container">
     <img
-      src="<?php echo $caminho_raiz; ?>00_apresentacao/imgs/jeferson.jpg"
+      src="<?php echo $caminho_raiz; ?>includes/imgs/jeferson.jpg"
       alt="Foto de <?php echo htmlspecialchars($nome); ?>"
       class="foto-perfil">
   </div>
