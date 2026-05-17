@@ -1,33 +1,36 @@
 <?php
 
-$caminho_raiz ='../';
+$pagina_atual = 'catalogo';
+$titulo_pagina = 'Detalhe | Portfólio DWII';
+$caminho_raiz ='./';
 
-require_once 'includes/conexao.php';
+require_once __DIR__ . '/includes/conexao.php';
 
 $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 
-if(!$id){
-    header('Location: index.php');
+if(!$id || $id <= 0){
+    header('Location: catalogo.php');
     exit;
 }
 
-$stmt = $pdo->prepare('SELECT * FROM tecnologias WHERE id = :id');
+$pdo = conectar();
+
+$stmt = $pdo->prepare("SELECT * FROM tecnologias WHERE id = :id AND status = 'ativo' LIMIT 1");
 $stmt->execute(['id' => $id]);
 $tec = $stmt->fetch();
 
 if(!$tec){
-    header('Location: index.php');
+    header('Location: catalogo.php');
     exit;
 }
 
-$titulo_pagina = htmlspecialchars($tec['nome']) . " - CATALOGO";
-$pagina_atual = "catalogo";
+$titulo_pagina = htmlspecialchars($tec['nome']) . '| Portfólio DWII';
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php include 'includes/cab_pdo.php';?>
+<?php include 'includes/cabecalho.php';?>
 </head>
 <body>
     <div class="container">
