@@ -42,19 +42,19 @@ $logado = isset($_SESSION['usuario']);
 
 <?php if($logado): ?>
 
-<a href="<?php echo $caminho_raiz; ?>04_sessoes/painel.php"
+<a href="<?php echo $caminho_raiz; ?>painel.php"
     <?php echo menu_class("painel", $pagina_atual); ?>>
     PAINEL
 </a>
 
-<a href="<?php echo $caminho_raiz; ?>04_sessoes/logout.php"
+<a href="<?php echo $caminho_raiz; ?>logout.php"
     <?php echo menu_class("logout", $pagina_atual); ?>>
     LOGOUT
 </a>
 
 <?php else: ?>
 
-<a href="<?php echo $caminho_raiz; ?>04_sessoes/publico.php"
+<a href="<?php echo $caminho_raiz; ?>login.php"
     <?php echo menu_class("login", $pagina_atual); ?>>
     LOGIN
 </a> 
