@@ -9,15 +9,23 @@ $caminho_raiz = './';
 
 require_once __DIR__ . '/includes/cabecalho.php';
 ?>
-
-<main style="max-width: 900px; margin: 40px auto; padding: 0 20px;">
-<h1>Painel</h1>
-<p>Olá, <strong><?= htmlspecialchars(usuario_atual()) ?></strong>!
-Você está em uma área restrita.</p>
-
-<p>Em breve, esta página listará seus projetos para edição(a ser implementado na <strong>Aula13 - Refatoração Parte 5</strong>).</p>
-
-<p><a href="logout.php">Sair</a></p>
-</main>
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <?php require_once __DIR__ . '/includes/cabecalho.php'; ?>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1 class="titulo-secao">Painel</h1>
+            <p>Olá, <strong><?php echo htmlspecialchars(usuario_atual()); ?></strong>!
+                Voce esta em uma area restrita.</p>
+            <p>
+                <a href="admin.php" class="btn-primario">Gerenciar projetos</a>
+            </p>
+        </div>
+    </main>
 <?php require_once __DIR__ . '/includes/rodape.php';?>
+</body>
+</html>
+
