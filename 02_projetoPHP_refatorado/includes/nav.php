@@ -35,7 +35,7 @@ $logado = isset($_SESSION['usuario']);
     <?php echo menu_class("contato", $pagina_atual); ?>>
     CONTATO
 </a>
- <a href="<?php echo $caminho_raiz; ?>03_pdo/index.php"
+ <a href="<?php echo $caminho_raiz; ?>detalhe.php"
     <?php echo menu_class("catalogo", $pagina_atual); ?>>
     CATALOGO
  </a>
